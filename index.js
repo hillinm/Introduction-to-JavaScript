@@ -189,7 +189,24 @@ annoyingSong();
 //and anything below 60 should be F
   
 
+
+function gradeBook (grade){
+    var studentGrade;
+    if (grade >= 90){
+        var studentGrade = "A";
+    } else if (grade >= 80 && grade <= 89){
+        var studentGrade = "B";
+    } else if (grade >= 70 && grade <= 79){
+        var studentGrade = "C";
+    } else if (grade >= 60 && grade <= 69){
+        var studentGrade = "D";
+    } else {
+        var grade = "F";
+    }
+    console.log("This student's letter grade is a " + studentGrade);
+}
   
+gradeBook(86);
   
 
 /************************************************************** Stretch **************************************************************/
