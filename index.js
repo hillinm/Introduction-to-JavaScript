@@ -213,6 +213,18 @@ gradeBook(86);
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
+function countingVowels (vowelString) {
+    var vowels = 'aeiouAEIOU';
+    var vowelCount = 0;
+
+    for (var i = 0; i < vowelString.length; i++) {
+        if (vowels.indexOf(vowelString[i]) !== -1) {
+            vowelCount += 1;
+        }
+    }
+    console.log(vowelCount + " is the number of vowels in this string");
+}
+countingVowels("The Beast in the East is the Bomb!");
 
 
 
