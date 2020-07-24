@@ -104,7 +104,41 @@ console.log(feedingRequirements);
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
+var myChoice = "Rock";
+console.log(myChoice);
+var computer = Math.random();
+console.log(computer);
+
+function rockPaperScissors () {
+    if (computer <= 0.33) {
+        computer = "Rock";
+    } else if (computer <= 0.66) {
+        computer = "Paper";
+    } else {
+        computer = "Scissors";
+    }
+    console.log(computer);
+    if (myChoice === computer) {
+        console.log("It's a Push")
+    } else if (myChoice === "Rock" && computer === "Paper"){
+        console.log("Paper covers rock!  Computer wins!");
+    } else if (myChoice === "Paper" && computer === "Rock"){
+        console.log("Paper covers rock!  I win!");
+    } else if (myChoice === "Rock" && computer === "Scissors") {
+        console.log("Rock crushes scissors!  I win!");
+    } else if (myChoice === "Scissors" && computer === "Paper") {
+        console.log("Scissors cut paper! I win!")
+    } else if (myChoice === "Paper" && computer === "Scissors") {
+        console.log("Scissors cut paper! Computer wins!")
+    }
+
+}
+
+rockPaperScissors();
+
+
+
+
   
 
 /************************************************************** Task 5 **************************************************************/
