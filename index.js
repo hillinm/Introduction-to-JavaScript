@@ -42,8 +42,14 @@ taskd ();
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
+var MyAge = 48
 
+function AgeInDogYears () {
+    var DogYears = MyAge * 7;
+    console.log(DogYears)
+}
 
+AgeInDogYears ();
 
 
 
@@ -65,6 +71,28 @@ taskd ();
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
+var weightInPounds = 15;
+var ageInYears = 1;
+var puppiesAgeInMonths = 4
+if (ageInYears >= 1 && weightInPounds <= 5) {
+    var feedingRequirements = weightInPounds * 0.05;
+} else if (ageInYears >= 1 && weightInPounds >= 6 && weightInPounds <= 10) {
+    var feedingRequirements = weightInPounds * 0.04;
+} else if (ageInYears >= 1 && weightInPounds >= 11 && weightInPounds <= 15) {
+    var feedingRequirements = weightInPounds * 0.03;
+} else if (ageInYears >= 1 && weightInPounds >= 15) {
+    var feedingRequirements = weightInPounds * 0.02;
+} else if (ageInYears < 1 && puppiesAgeInMonths <= 4) {
+    var feedingRequirements = weightInPounds * .10;
+} else if (ageInYears < 1 && puppiesAgeInMonths > 4 && puppiesAgeInMonths <= 7) {
+    var feedingRequirements = weightInPounds * .05;
+} else if (ageInYears < 1 && puppiesAgeInMonths > 7 && puppiesAgeInMonths <= 11) {
+    var feedingRequirements = weightInPounds * .04;
+}
+    
+console.log(ageInYears);
+console.log(weightInPounds);
+console.log(feedingRequirements);
 
 
 
