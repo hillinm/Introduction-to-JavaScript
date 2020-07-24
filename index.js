@@ -167,6 +167,15 @@ console.log(feet + " feet is equal to " + CM + " Centimeters")
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
 
+function annoyingSong () {
+    var i;
+    for (i = 99; i > 0; i--){
+        bottlesLeft = i - 1;
+        console.log(i + " bottles of soda on the wall! " + i + " bottles of soda! Take one down, pass it around, " + bottlesLeft + " bottles of soda on the wall!");
+    }
+}
+
+annoyingSong();
 
 
 
