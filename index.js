@@ -145,13 +145,19 @@ rockPaperScissors();
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-
+var KM = 1000;
+var Miles = KM / 1.609;
+var Miles = Math.round(Miles, 2); 
+console.log(KM + " Kilometers is equal to " + Miles + " Miles");
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-
+var feet = 1000;
+var CM = feet * 30.48;
+var CM = Math.round(CM, 2);
+console.log(feet + " feet is equal to " + CM + " Centimeters")
 
 
 
