@@ -223,6 +223,35 @@ gradeBook(86);
 //update your rock papers sissors code below to take a prompt from a user using the window object
 
 
+var myChoice = prompt ("Please enter Rock, Paper, or Scissors");
+console.log(myChoice);
+var computer = Math.random();
+console.log(computer);
 
+function rockPaperScissors () {
+    if (computer <= 0.33) {
+        computer = "Rock";
+    } else if (computer <= 0.66) {
+        computer = "Paper";
+    } else {
+        computer = "Scissors";
+    }
+    console.log(computer);
+    if (myChoice === computer) {
+        console.log("It's a Push")
+    } else if (myChoice === "Rock" && computer === "Paper"){
+        console.log("Paper covers rock!  Computer wins!");
+    } else if (myChoice === "Paper" && computer === "Rock"){
+        console.log("Paper covers rock!  I win!");
+    } else if (myChoice === "Rock" && computer === "Scissors") {
+        console.log("Rock crushes scissors!  I win!");
+    } else if (myChoice === "Scissors" && computer === "Paper") {
+        console.log("Scissors cut paper! I win!")
+    } else if (myChoice === "Paper" && computer === "Scissors") {
+        console.log("Scissors cut paper! Computer wins!")
+    }
 
+}
+
+rockPaperScissors();
 
