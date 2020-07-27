@@ -130,6 +130,8 @@ function rockPaperScissors () {
         console.log("Scissors cut paper! I win!")
     } else if (myChoice === "Paper" && computer === "Scissors") {
         console.log("Scissors cut paper! Computer wins!")
+    } else {
+        console.log("Please check your entry!")
     }
 
 }
@@ -218,7 +220,7 @@ gradeBook(86);
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 function countingVowels (vowelString) {
-    var vowels = 'aeiouAEIOU';
+    var vowels = 'aeioAEIOU';
     var vowelCount = 0;
 
     for (var i = 0; i < vowelString.length; i++) {
@@ -240,34 +242,10 @@ countingVowels("The Beast in the East is the Bomb!");
 
 
 var myChoice = prompt ("Please enter Rock, Paper, or Scissors");
+myChoice = myChoice.charAt(0).toUpperCase() + myChoice.slice(1); 
 console.log(myChoice);
 var computer = Math.random();
 console.log(computer);
-
-function rockPaperScissors () {
-    if (computer <= 0.33) {
-        computer = "Rock";
-    } else if (computer <= 0.66) {
-        computer = "Paper";
-    } else {
-        computer = "Scissors";
-    }
-    console.log(computer);
-    if (myChoice === computer) {
-        console.log("It's a Push")
-    } else if (myChoice === "Rock" && computer === "Paper"){
-        console.log("Paper covers rock!  Computer wins!");
-    } else if (myChoice === "Paper" && computer === "Rock"){
-        console.log("Paper covers rock!  I win!");
-    } else if (myChoice === "Rock" && computer === "Scissors") {
-        console.log("Rock crushes scissors!  I win!");
-    } else if (myChoice === "Scissors" && computer === "Paper") {
-        console.log("Scissors cut paper! I win!")
-    } else if (myChoice === "Paper" && computer === "Scissors") {
-        console.log("Scissors cut paper! Computer wins!")
-    }
-
-}
 
 rockPaperScissors();
 
