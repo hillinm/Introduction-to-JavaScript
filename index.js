@@ -171,7 +171,11 @@ function annoyingSong () {
     var i;
     for (i = 99; i > 0; i--){
         bottlesLeft = i - 1;
-        console.log(i + " bottles of soda on the wall! " + i + " bottles of soda! Take one down, pass it around, " + bottlesLeft + " bottles of soda on the wall!");
+        if (bottlesLeft == 0){
+            console.log(i + " bottle of soda on the wall! " + i + " bottle of soda! Take it down, pass it around, no bottles of soda on the wall!");
+        } else {
+            console.log(i + " bottles of soda on the wall! " + i + " bottles of soda! Take one down, pass it around, " + bottlesLeft + " bottles of soda on the wall!");
+        }
     }
 }
 
