@@ -227,6 +227,7 @@ function countingVowels (vowelString) {
 
     for (var i = 0; i < vowelString.length; i++) {
         if (vowels.indexOf(vowelString[i]) !== -1) {
+            console.log(vowels.indexOf(vowelString[i]));
             vowelCount += 1;
         }
     }
