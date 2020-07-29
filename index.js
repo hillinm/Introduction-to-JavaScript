@@ -192,7 +192,7 @@ annoyingSong();
 //write a javaScript program that takes a mark out of 100 and returns a corisponding letter grade 
 //90s should be A 
 //80s should be B 
-//70s should be Cs 
+//70s should be C 
 //60s should be D 
 //and anything below 60 should be F
   
@@ -222,7 +222,7 @@ gradeBook(86);
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 function countingVowels (vowelString) {
-    var vowels = 'aeioAEIOU';
+    var vowels = 'aeiouAEIOU';
     var vowelCount = 0;
 
     for (var i = 0; i < vowelString.length; i++) {
